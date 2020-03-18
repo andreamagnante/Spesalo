@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Spesalo</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="String">Food Name</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_cart">CartActivity</string>
+    <string name="title_activity_listaspesa">ListaspesaActivity</string>
+    <string name="title_activity_calendario">CalendarioActivity</string>
+    <string name="title_activity_offerte">OfferteActivity</string>
+    <string name="title_activity_notifiche">NotificheActivity</string>
+
+</resources>

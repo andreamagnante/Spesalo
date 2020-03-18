@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "898464620671",
+    "firebase_url": "https://spesalo-c6f47.firebaseio.com",
+    "project_id": "spesalo-c6f47",
+    "storage_bucket": "spesalo-c6f47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898464620671:android:4319c3a5c49d53d9",
+        "android_client_info": {
+          "package_name": "com.andrea.spesalo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898464620671-01dm9uccl7g82srq15lh6s5peka1md4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.andrea.spesalo",
+            "certificate_hash": "e12a0c452508b41738c135d0ef1a7a42d0ae9909"
+          }
+        },
+        {
+          "client_id": "898464620671-d3t9t8kiv672na5bhlcs3oei81nol930.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmxHDgQHYFmIF7y2wKy_NTPGXD5JJ7Jo4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898464620671-d3t9t8kiv672na5bhlcs3oei81nol930.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

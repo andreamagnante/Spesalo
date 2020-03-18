@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#273840">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#273840"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <Button
+            android:onClick="goback"
+            android:id="@+id/button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_arrow_back_white_24dp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Lista della spesa"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center_horizontal"/>
+
+
+        <LinearLayout
+            android:id="@+id/layout_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:background="#273840"
+        android:id="@+id/ciaone"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="190dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@android:color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listLista"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center|bottom"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="130dp"
+        >
+
+        <Button android:id="@+id/svuotalistaButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="22dp"
+            android:text="SVUOTA LISTA"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:backgroundTint="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:onClick="deletelista"></Button>
+
+        <Button
+            android:id="@+id/aggiungiButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="22dp"
+            android:backgroundTint="#ffd52a"
+            android:text="AGGIUNGI ELEMENTO"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:onClick="addlista"></Button>
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/offertaList2"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_login"
+                android:backgroundTint="#B83616"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#fff"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="NON CI SONO OFFERTE IN QUESTO MOMENTO. RIPROVARE PIU' TARDI"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            >
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager2"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true"
+                />
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:padding="10dip"
+                app:centered="true"
+                app:fillColor="#df0623"
+                app:pageColor="#fff"
+                app:snap="false"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

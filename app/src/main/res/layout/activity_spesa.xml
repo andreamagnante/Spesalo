@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#273840"
+    tools:context=".SpesaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+        <Button
+            android:onClick="gotocalendario"
+            android:id="@+id/button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_arrow_back_white_24dp"
+            android:backgroundTint="#fff"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/giornospesa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|top"
+            android:text="SPESA DEL "
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="Descrizione"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:background="#D3D3D3"
+            android:textSize="15sp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="60dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="Quantità"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:background="#D3D3D3"
+            android:textSize="15sp"
+            android:paddingRight="60dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="160dp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/ciaone"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- Here you can put your logo or brand name -->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listSpesa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|bottom">
+
+            <TextView
+                android:id="@+id/totale"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/background_login"
+                android:backgroundTint="#ffd52a"
+                android:padding="20dp"
+                android:text="TOTALE : € "
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

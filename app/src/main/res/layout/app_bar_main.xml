@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#000"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logoImmagine"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/l3"
+        android:visibility="visible"/>
+
+   <Button
+        android:id="@+id/buttonInizia"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+       android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:onClick="gotobarcode"
+        app:backgroundTint="#ffd52a"
+        app:layout_anchor="@+id/include"
+        app:rippleColor="#000"
+       android:text="Scannerizza il tuo primo prodotto"
+       android:textStyle="bold"
+        android:background="@drawable/background_login"
+       android:visibility="visible"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/oppure"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/buttonListaspesa"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="30dp"
+            android:clickable="true"
+            android:onClick="gotolistaspesa"
+            app:backgroundTint="#ffffff"
+            app:layout_anchor="@+id/include"
+            app:rippleColor="#000"
+            android:drawableLeft="@drawable/ic_local_lista_spesa_24dp"
+            android:paddingLeft="15dp"
+            android:text="Crea la tua lista della spesa"
+            android:textStyle="bold"
+            android:background="@drawable/background_login"
+            android:visibility="visible"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

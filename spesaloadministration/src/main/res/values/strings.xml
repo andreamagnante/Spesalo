@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Spesalo Administration</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Offerte</string>
+    <string name="title_activity_offerte">OfferteActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+</resources>

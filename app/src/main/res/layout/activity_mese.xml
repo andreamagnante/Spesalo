@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeseActivity">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="tabian.com.datepickerdialog.MainActivity"
+        android:background="#273840">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:onClick="goback"
+                android:id="@+id/button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_arrow_back_white_24dp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:layout_marginTop="9dp"
+                android:id="@+id/datascelta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                />
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="ID"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:background="#D3D3D3"
+            android:textSize="15sp"
+            android:paddingLeft="25dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Data"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:background="#D3D3D3"
+            android:textSize="15sp"
+            android:paddingTop="8dp"
+            android:paddingLeft="75dp"
+            android:paddingBottom="8dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:hint="Importo"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:background="#D3D3D3"
+            android:textSize="15sp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            />
+
+    </LinearLayout>
+        <ScrollView
+            android:id="@+id/ciaone"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <!-- Here you can put your logo or brand name -->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/listSpesa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:scrollbars="vertical" />
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

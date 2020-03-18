@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout android:id="@+id/linearQR" android:background="#ffd52a" tools:context="com.andrea.spesalo.QrcodeActivity" android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_height="match_parent" android:layout_width="match_parent">
+        <RelativeLayout android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/indietro"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/ic_arrow_back_black_24dp"
+                android:clickable="true"
+                android:onClick="goindietro"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+    <ImageView android:id="@+id/immagines" android:layout_marginTop="50dp" android:layout_height="300dp" android:layout_width="match_parent" android:src="@drawable/logo7" android:layout_gravity="center_horizontal"/>
+
+    <ImageView android:layout_height="400dp" android:layout_marginTop="350dp" android:layout_width="match_parent" android:id="@+id/iv"/>
+
+            <ImageView android:layout_height="250dp" android:layout_marginTop="330dp" android:layout_marginLeft="70dp" android:layout_width="250dp" android:id="@+id/iv2" android:background="@drawable/shopdone" android:visibility="invisible"/>
+            <Button
+                android:id="@+id/tornahome"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="640dp"
+                android:background="@drawable/background_login"
+                android:clickable="true"
+                android:padding="16dp"
+                android:text="TORNA ALLA HOME"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="70dp"
+                android:visibility="invisible"
+                android:onClick="goindietro"/>
+</RelativeLayout>
+
+</ScrollView>
+
+</LinearLayout>

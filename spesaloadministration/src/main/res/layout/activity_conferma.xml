@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfermaActivity"
+    android:background="#273840">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:background="#273840"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:text="Carrello utente numero:"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="110dp"
+                    android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/codice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal|center_vertical"></TextView>
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:text="Data acquisto:"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="110dp"
+                    android:layout_alignParentTop="true">
+
+                    <TextView
+                        android:id="@+id/data"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:textAllCaps="false"
+                        android:textColor="#000"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal|center_vertical"></TextView>
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/loginButton"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="230dp"
+                    android:background="@drawable/background_login"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="CONFERMA"
+                    android:textAllCaps="false"
+                    android:textColor="#f16f7d"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="confermaspesa"/>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+        </RelativeLayout>
