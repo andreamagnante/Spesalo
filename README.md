@@ -1,4 +1,6 @@
 # Spesalo
+Project for the Human Computer Interaction course - La Sapienza Università di Roma
+
 Android application useful to improve and speed up everyday shopping
 
 <h2>Screenshoots from the app</h2>
